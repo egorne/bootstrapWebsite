@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <!-- Font Awesome JS -->
     <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
-    <title>Contact me!</title>
+    <title>Contact me</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -48,7 +48,80 @@
         </ul>
       </div>
     </nav>
-
+    <nav class="navbar fixed-bottom navbar-light bg-light my-n4 p-1" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html" style="text-decoration: none;" class="text-light">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page" class="text-light">Contact</li>
+      </ol>
+    </nav>
+    <div class="col-sm-8 col-lg-6 offset-lg-3 offset-sm-2 bg-white rounded mt-4 p-3">
+      <h4 class="text-center">Find me here:</h4>
+      <div class="text-primary text-center my-3">
+        <a class="text-primary" href="https://www.facebook.com/profile.php?id=100013380334536"><i class="fab fa-facebook-f fa-5x mx-4"></i></a>
+        <a class="text-primary" href="https://github.com/egorne"><i class="fab fa-github-alt fa-5x mx-4"></i></a>
+        <a class="text-primary" href="https://twitter.com/forkedthought"><i class="fab fa-twitter fa-5x mx-4"></i> </a>
+      </div>
+    </div>
+    <div class="col-sm-8 col-lg-6 offset-lg-3 offset-sm-2 bg-white rounded mt-4 p-3">
+      <h4 class="text-center">Or leave me a message:</h4>
+      <form class="m-3 mt-4">
+        <div class="my-3">
+          <textarea rows="4" class="form-control" id="inputMsg" placeholder="Your message" required></textarea>
+          <div class="invalid-feedback">
+            Please enter your message
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputName" placeholder="Your name" required>
+            <div class="invalid-feedback">
+              Please enter your name
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Your email" required>
+          </div>
+        </div>
+        <fieldset class="form-group mt-n4">
+          <small class="form-text">
+            <label class="col-form-label offset-sm-2 p-2">Is this your work email address?</label>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1">Yes</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline ml-n2">
+                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline2">No</label>
+            </div>
+          </small>
+        </fieldset>
+        <div class="form-group row">
+          <div class="input-group">
+            <label for="inputEmail" class="col-sm-2 col-form-label">You are</label>
+            <select class="custom-select mx-3" id="inputGroupSelect02">
+              <option value="1" selected>In Finland</option>
+              <option value="2">Outside of Finland</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="d-flex justify-content-end col">
+            <div class="p-2">
+              <a href="contact.html">
+                <button type="link" class="btn btn-secondary">Refresh</button>
+              </a>
+            </div>
+            <div class="p-2">
+              <button type="submit" class="btn btn-primary">Send message</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
     <!-- Bootstrap JavaScript -->
     <!-- jQuery first, then Bootstrap bundled with Popper.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

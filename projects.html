@@ -48,22 +48,28 @@
         </ul>
       </div>
     </nav>
+    <nav class="navbar fixed-bottom navbar-light bg-light my-n4 p-1" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html" style="text-decoration: none;" class="text-light">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page" class="text-light">Projects</li>
+      </ol>
+    </nav>
     <div class="row m-2">
       <div class="col-sm-6 p-3">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Personal Website</h5>
-            <p class="card-text">Designed and developed a website from scratch using Bootstrap 4 with customized CSS</p>
-            <a href="#" class="btn btn-primary">Take a look</a>
+            <h5 class="card-title">PHP backend app</h5>
+            <p class="card-text">Designed and implemented an app that takes inputs from a webform and writes them to a database</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#phpproj">More info</button>
           </div>
         </div>
       </div>
       <div class="col-sm-6 p-3">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">PHP backend app</h5>
-            <p class="card-text">Designed and implemented an app that takes inputs from a webform and writes them to a database</p>
-            <a href="#" class="btn btn-primary">More info</a>
+            <h5 class="card-title">C# Data analysis App</h5>
+            <p class="card-text">Designed and coded an app that helps user select and book the cheapest time to use a datacenter services </p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cproj">More info</button>
           </div>
         </div>
       </div>
@@ -72,9 +78,9 @@
       <div class="col-sm-6 p-3">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">C# Data parsing app</h5>
-            <p class="card-text">Designed and implemented an app that reads data from a hosted .json file and writes it into XML locally</p>
-            <a href="#" class="btn btn-primary">More info</a>
+            <h5 class="card-title">Website with Bootstrap</h5>
+            <p class="card-text">Designed and developed a personal website from scratch using Bootstrap 4 with customized CSS</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#website">More info</button>
           </div>
         </div>
       </div>
@@ -83,7 +89,82 @@
           <div class="card-body">
             <h5 class="card-title">Stay Tuned</h5>
             <p class="card-text">More projects coming soon! Meanwhile you should check out some of my favourite pictures in the Gallery</p>
-            <a href="gallery.html" class="btn btn-primary">Gallery</a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gallery">Check out the Gallery</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="phpproj" tabindex="-1" role="dialog" aria-labelledby="phpTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header" id="phpTitle">
+            <h5 class="modal-title">PHP backend app</h5>
+          </div>
+          <div class="modal-body">
+            This app was designed for a university course as a part of creating a responsive web-application that would take users data,
+            save it, make modifications to it then output a result. Although the app was written using PHP, implementation of the whole
+            project also took knowledge of JS as well as HTML and some CSS.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="cproj" tabindex="-1" role="dialog" aria-labelledby="cTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cTitle">C# Data parsing app</h5>
+          </div>
+          <div class="modal-body">
+            I have designed this app as a part of a university course project with the aim to improve the time-booking
+            system of a datacenter, based on the expected workload, availability of services and energy prices. User would enter
+            the amount of time they needed the services for and if it needed to be done in one timeslot uninterrupted or
+            if it could be separated into multiple half-hour increments. The app would then read data from a .json file with
+            current electricity prices from the electricity providers website, put it against the availability massive
+            and, depending on user input, select and use one of the methods to find the cheapest available time slots,
+            calculate the price and output it to the user, who can then decide if they want to book the time.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="website" tabindex="-1" role="dialog" aria-labelledby="websiteTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="websiteTitle">My website</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            My website, that you are currently looking at was made by me from scratch using Bootstrap 4
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="gallery" tabindex="-1" role="dialog" aria-labelledby="galleryTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="galleryTitle">Open the Gallery?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            In the gallery you can take a look on a collection of some of my favourite pictures
+          </div>
+          <div class="modal-footer">
+            <a href="gallery.html" class="btn btn-secondary">Go to the Gallery</a>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
